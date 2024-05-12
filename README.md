@@ -8,8 +8,9 @@ github 生成key
 打开终端（在Windows上可以使用Git Bash）。
 
 输入以下命令生成新的SSH key：
-
+```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 将"your_email@example.com"替换为你的GitHub注册邮箱。
 
 系统会提示你输入文件保存路径和文件名，如果你想直接按回车接受默认路径和文件名，则直接回车即可。
@@ -19,8 +20,9 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 生成的SSH key保存在~/.ssh/id_rsa.pub（默认路径和文件名）。
 
 使用以下命令查看SSH key：
-
+```
 cat ~/.ssh/id_rsa.pub
+```
 复制显示的SSH key内容。
 
 登录GitHub网站，进入Settings -> SSH and GPG keys -> New SSH key，将复制的SSH key粘贴到Key文本框中，然后点击“Add SSH key”按钮保存。
